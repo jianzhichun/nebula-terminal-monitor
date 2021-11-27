@@ -1,0 +1,10 @@
+certifi==2021.10.8
+charset-normalizer==2.0.8
+idna==3.3
+numpy==1.19.5
+olefile==0.44
+Pillow==4.2.1
+plotext==4.0.0
+requests==2.26.0
+schedule==1.1.0
+urllib3==1.26.7
