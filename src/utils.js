@@ -6,7 +6,6 @@ const { always, gt, cond, T } = lodash
 const { flow, remove, takeRight } = lodash
 const { negate, first } = lodash
 
-export const print = (string) => process.stdout.write(string + "\n")
 const id = always
 export const normalize = cond([
     [gt(0.0001), id(8)],

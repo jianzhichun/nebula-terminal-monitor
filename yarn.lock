@@ -298,11 +298,6 @@ chalk@^5.0.0:
   resolved "https://registry.npmmirror.com/chalk/download/chalk-5.0.0.tgz#bd96c6bb8e02b96e08c0c3ee2a9d90e050c7b832"
   integrity sha512-/duVOqst+luxCQRKEo4bNxinsOQtMP80ZYm7mMqzuh5PociNL0PvmHFvREJ9ueYL2TxlHjBcmLCdmocx9Vg+IQ==
 
-clear@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.nlark.com/clear/download/clear-0.1.0.tgz#b81b1e03437a716984fd7ac97c87d73bdfe7048a"
-  integrity sha1-uBseA0N6cWmE/XrJfIfXO9/nBIo=
-
 cli-circle@^3.0.0:
   version "3.2.11"
   resolved "https://registry.npmmirror.com/cli-circle/download/cli-circle-3.2.11.tgz#7a62f90f6a409afe2e0c9d28069f6d716b4700d2"
