@@ -1,22 +1,34 @@
 #!/usr/bin/env node
 
 import args from "./src/argument.js"
-import asciichart from "asciichart"
+import ervy from "ervy"
 import stats from "./src/stats.js"
 import moment from "moment"
-import { normalize, time, interpolate } from "./src/utils.js"
+import { normalize, time, interpolate, zip } from "./src/utils.js"
+const { bar, pie, bullet, donut, gauge, scatter, fg, bg } = ervy
 
 try {
   setInterval(() => {
     stats().then(map => {
-      console.log(args)
-      console.log(map)
       console.clear()
-      var s2 = new Array(120)
-      s2[0] = Math.round(Math.random() * 15)
-      for (let i = 1; i < s2.length; i++)
-        s2[i] = s2[i - 1] + Math.round(Math.random() * (Math.random() > 0.5 ? 2 : -2))
-      console.log(asciichart.plot(s2))
+      const pieData1 = [
+        { key: 'A', value: 5, style: '* ' },
+        { key: 'B', value: 10, style: '+ ' },
+        { key: 'C', value: 10, style: '# ' },
+        { key: 'D', value: 10, style: 'O ' }
+      ]
+
+      const pieData2 = [
+        { key: 'A', value: 5, style: bg('cyan', 2) },
+        { key: 'B', value: 5, style: bg('yellow', 2) },
+        { key: 'C', value: 5, style: bg('magenta', 2) },
+        { key: 'D', value: 5, style: bg('white', 2) }
+      ]
+      zip(
+        pie(pieData1, { left: 1 }).split(/\r?\n/),
+        pie(pieData2, { left: 100 }).split(/\r?\n/),
+        (a1, a2) => console.log(a1 + a2)
+      )
     })
   }, 100);
 } catch (e) {

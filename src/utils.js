@@ -26,3 +26,5 @@ export const time = () =>
     ])
 
 export const interpolate = (i) => interpolateArray(args.maxWidth)(takeRight(time()[0])(i))
+
+export const zip = (a, b, fn = undefined) => Array.from(Array(Math.max(b.length, a.length)), (_, i) => fn ? fn(a[i], b[i]) : [a[i], b[i]]);

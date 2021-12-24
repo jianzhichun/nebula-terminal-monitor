@@ -226,11 +226,6 @@ array.prototype.flatmap@^1.2.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.0"
 
-asciichart@^1.5.25:
-  version "1.5.25"
-  resolved "https://registry.npmmirror.com/asciichart/download/asciichart-1.5.25.tgz#f5aca189801b4e58019139bbb5922ab3cae3ca90"
-  integrity sha1-9ayhiYAbTlgBkTm7tZIqs8rjypA=
-
 axios@^0.24.0:
   version "0.24.0"
   resolved "https://registry.npmmirror.com/axios/download/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
@@ -293,37 +288,6 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmmirror.com/chalk/download/chalk-5.0.0.tgz#bd96c6bb8e02b96e08c0c3ee2a9d90e050c7b832"
-  integrity sha512-/duVOqst+luxCQRKEo4bNxinsOQtMP80ZYm7mMqzuh5PociNL0PvmHFvREJ9ueYL2TxlHjBcmLCdmocx9Vg+IQ==
-
-cli-circle@^3.0.0:
-  version "3.2.11"
-  resolved "https://registry.npmmirror.com/cli-circle/download/cli-circle-3.2.11.tgz#7a62f90f6a409afe2e0c9d28069f6d716b4700d2"
-  integrity sha1-emL5D2pAmv4uDJ0oBp9tcWtHANI=
-  dependencies:
-    cli-graph "^3.0.0"
-    typpy "^2.3.3"
-    ul "^5.0.0"
-
-cli-graph@^3.0.0:
-  version "3.2.2"
-  resolved "https://registry.nlark.com/cli-graph/download/cli-graph-3.2.2.tgz#d6810a263ab10971be688279f67fac98f8df743a"
-  integrity sha1-1oEKJjqxCXG+aIJ59n+smPjfdDo=
-  dependencies:
-    ul "5.0.0"
-
-cli-pie@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.npmmirror.com/cli-pie/download/cli-pie-2.4.2.tgz#bb21d2874d5e5bfe927e845f24103e450563b1ae"
-  integrity sha1-uyHSh01eW/6SfoRfJBA+RQVjsa4=
-  dependencies:
-    cli-circle "^3.0.0"
-    couleurs "^5.0.0"
-    flatcolors "^3.0.0"
-    ul "^5.0.0"
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npmmirror.com/color-convert/download/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -357,15 +321,6 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npm.taobao.org/concat-map/download/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-
-couleurs@^5.0.0:
-  version "5.2.1"
-  resolved "https://registry.nlark.com/couleurs/download/couleurs-5.2.1.tgz#5399f9f7a159852ec14244f841bd858f04dc52a3"
-  integrity sha1-U5n596FZhS7BQkT4Qb2FjwTcUqM=
-  dependencies:
-    flat-colors "3.0.0"
-    typpy "2.0.0"
-    x256 "0.0.2"
 
 create-eslint-index@^1.0.0:
   version "1.0.0"
@@ -409,20 +364,6 @@ deep-is@^0.1.3:
   resolved "https://registry.nlark.com/deep-is/download/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha1-pvLc5hL63S7x9Rm3NVHxfoUZmDE=
 
-deffy@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/deffy/download/deffy-2.0.0.tgz#f82e08eea518c4a0a30b1f03ec504d248af28932"
-  integrity sha1-+C4I7qUYxKCjCx8D7FBNJIryiTI=
-  dependencies:
-    typpy "^2.0.0"
-
-deffy@^2.2.2:
-  version "2.2.4"
-  resolved "https://registry.npm.taobao.org/deffy/download/deffy-2.2.4.tgz#53c1b5f59b58a58150b1c9de5529229875c4cc17"
-  integrity sha1-U8G19ZtYpYFQscneVSkimHXEzBc=
-  dependencies:
-    typpy "^2.0.0"
-
 define-properties@^1.1.3:
   version "1.1.3"
   resolved "https://registry.nlark.com/define-properties/download/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
@@ -450,6 +391,11 @@ enquirer@^2.3.5:
   integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
   dependencies:
     ansi-colors "^4.1.1"
+
+ervy@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/ervy/download/ervy-1.0.7.tgz#b4167707ef178484c7b84d7d6e8cca727cf7f252"
+  integrity sha1-tBZ3B+8XhITHuE19bozKcnz38lI=
 
 es-abstract@^1.19.0, es-abstract@^1.19.1:
   version "1.19.1"
@@ -724,16 +670,6 @@ flat-cache@^3.0.4:
     flatted "^3.1.0"
     rimraf "^3.0.2"
 
-flat-colors@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.nlark.com/flat-colors/download/flat-colors-3.0.0.tgz#253ab1a23989c321f13b0acd4bf73fff4072ecb7"
-  integrity sha1-JTqxojmJwyHxOwrNS/c//0By7Lc=
-
-flatcolors@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmmirror.com/flatcolors/download/flatcolors-3.0.0.tgz#4393283b7335a89b2e4d470aa966f8cd8a1fab3d"
-  integrity sha1-Q5MoO3M1qJsuTUcKqWb4zYofqz0=
-
 flatted@^3.1.0:
   version "3.2.4"
   resolved "https://registry.npmmirror.com/flatted/download/flatted-3.2.4.tgz?cache=0&sync_timestamp=1636473890358&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fflatted%2Fdownload%2Fflatted-3.2.4.tgz#28d9969ea90661b5134259f312ab6aa7929ac5e2"
@@ -758,13 +694,6 @@ function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
   integrity sha1-pWiZ0+o8m6uHS7l3O3xe3pL0iV0=
-
-function.name@^1.0.3:
-  version "1.0.13"
-  resolved "https://registry.npm.taobao.org/function.name/download/function.name-1.0.13.tgz#eef045abc4b5ff4e3e9d001a53ce14e090c971c6"
-  integrity sha1-7vBFq8S1/04+nQAaU84U4JDJccY=
-  dependencies:
-    noop6 "^1.0.1"
 
 functional-red-black-tree@^1.0.1:
   version "1.0.1"
@@ -1119,11 +1048,6 @@ natural-compare@^1.4.0:
   resolved "https://registry.npm.taobao.org/natural-compare/download/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-noop6@^1.0.1:
-  version "1.0.9"
-  resolved "https://registry.nlark.com/noop6/download/noop6-1.0.9.tgz#8749944c15c09f2cd2d562ac24f5a8341762a950"
-  integrity sha1-h0mUTBXAnyzS1WKsJPWoNBdiqVA=
-
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -1462,34 +1386,6 @@ type-fest@^0.20.2:
   resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha1-G/IH9LKPkVg2ZstfvTJ4hzAc1fQ=
 
-typpy@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/typpy/download/typpy-2.0.0.tgz#adef3bacc12ff47aff920fab03a8ff3279d737d6"
-  integrity sha1-re87rMEv9Hr/kg+rA6j/MnnXN9Y=
-
-typpy@^2.0.0, typpy@^2.3.3, typpy@^2.3.4:
-  version "2.3.13"
-  resolved "https://registry.npm.taobao.org/typpy/download/typpy-2.3.13.tgz#7e16a3aa83d7eecdfbd5ee615b9ffd785887ee7e"
-  integrity sha1-fhajqoPX7s371e5hW5/9eFiH7n4=
-  dependencies:
-    function.name "^1.0.3"
-
-ul@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/ul/download/ul-5.0.0.tgz#ca80d793025f3fd5dc9bf83469818d310a7c9a62"
-  integrity sha1-yoDXkwJfP9Xcm/g0aYGNMQp8mmI=
-  dependencies:
-    deffy "2.0.0"
-    typpy "2.0.0"
-
-ul@^5.0.0:
-  version "5.2.15"
-  resolved "https://registry.npm.taobao.org/ul/download/ul-5.2.15.tgz#426425355ae15df2d5d09b351aade26ed06dd9ed"
-  integrity sha1-QmQlNVrhXfLV0Js1Gq3ibtBt2e0=
-  dependencies:
-    deffy "^2.2.2"
-    typpy "^2.3.4"
-
 unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/unbox-primitive/download/unbox-primitive-1.0.1.tgz?cache=0&sync_timestamp=1616706302651&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Funbox-primitive%2Fdownload%2Funbox-primitive-1.0.1.tgz#085e215625ec3162574dc8859abee78a59b14471"
@@ -1539,11 +1435,6 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.nlark.com/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-
-x256@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npm.taobao.org/x256/download/x256-0.0.2.tgz#c9af18876f7a175801d564fe70ad9e8317784934"
-  integrity sha1-ya8Yh296F1gB1WT+cK2egxd4STQ=
 
 yallist@^4.0.0:
   version "4.0.0"
