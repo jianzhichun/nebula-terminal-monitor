@@ -9,6 +9,7 @@ program
   .version(version)
   .option("-n, --node", "show node monitor")
   .option("-g, --graph", "show graph monitor")
+  .option("-https", "https", false)
   .option("-h --host <string>", "specify the host ip of node or graph", "127.0.0.1")
   .option("-p --port <n>", "specify the port of node or graph", parseInt, 51516)
   .option("-i --interval <n>", "specify the interval of node or graph", parseInt, 30)
@@ -21,6 +22,7 @@ const param = program.opts()
 export default {
   node: param.node,
   graph: param.graph,
+  https: param.https,
   host: param.host,
   port: param.port,
   interval: param.interval,
