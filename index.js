@@ -3,10 +3,9 @@
 import args from "./src/argument.js"
 import asciichart from "asciichart"
 import moment from "moment"
-import { print, normalize, time, interpolate } from "./src/utils.js"
+import { normalize, time, interpolate } from "./src/utils.js"
 
 try {
-  print(args)
   setInterval(() => {
     console.clear()
     var s2 = new Array(120)
