@@ -7,7 +7,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "pkg": "pkg -t node14-linux-x64 index.js -o nebula-monitor"
   },
   "bin": {
     "nebula-terminal-monitor-cli": "index.js"
@@ -38,11 +39,11 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^8.5.0",
-    "eslint-config-cleanjs": "^4.0.0",
     "eslint-plugin-better": "^0.1.5",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-react": "^7.27.1",
+    "pkg": "^5.5.1",
     "prettier": "^2.5.1"
   }
 }
