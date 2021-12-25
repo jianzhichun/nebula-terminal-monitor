@@ -3,13 +3,13 @@
 import args from "./src/argument.js"
 import stats from "./src/stats.js"
 import asciichart from "asciichart";
-const screenHeight = process.stdout.rows;
+const screenHeight = process.stdout.rows || 100;
 
 try {
   let data = new Array(120).fill(0)
   setInterval(() => {
-    stats().then(map => {
-      if (data.length > 120) {
+    stats(args.stat).then(map => {
+      if (data.length >= 120) {
         data.pop()
       }
       data.push(map[args.stat])

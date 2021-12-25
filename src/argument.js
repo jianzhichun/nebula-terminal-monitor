@@ -15,7 +15,7 @@ program
   .option("-i --interval <n>", "specify the interval of node or graph", parseInt, 30)
   .option("-tu --timeunit <string>", "specify the timeunit of node or graph", "s")
   .option("--disable-legend", "disable legend text")
-  .option("-s --stat <string>", "stat", "num_queries.rate.5")
+  .option("-s --stat <string>", "stat", "query_latency_us.avg.3600")
   .parse(process.argv)
 
 const param = program.opts()
