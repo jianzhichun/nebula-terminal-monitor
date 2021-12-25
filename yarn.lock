@@ -262,18 +262,6 @@ array-includes@^3.1.3, array-includes@^3.1.4:
     get-intrinsic "^1.1.1"
     is-string "^1.0.7"
 
-array-interpolatejs@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmmirror.com/array-interpolatejs/download/array-interpolatejs-1.0.2.tgz#1d5b088bb486e1b089714ebac869b06c7e71f23d"
-  integrity sha1-HVsIi7SG4bCJcU66yGmwbH5x8j0=
-  dependencies:
-    lodash "^4.17.4"
-
-array-matrix@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmmirror.com/array-matrix/download/array-matrix-1.0.0.tgz#7eff5f121598fa232a220f8e00bd252a6a223e89"
-  integrity sha1-fv9fEhWY+iMqIg+OAL0lKmoiPok=
-
 array.prototype.flat@^1.2.5:
   version "1.2.5"
   resolved "https://registry.npmmirror.com/array.prototype.flat/download/array.prototype.flat-1.2.5.tgz?cache=0&sync_timestamp=1633110161110&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Farray.prototype.flat%2Fdownload%2Farray.prototype.flat-1.2.5.tgz#07e0975d84bbc7c48cd1879d609e682598d33e13"
@@ -291,13 +279,6 @@ array.prototype.flatmap@^1.2.5:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
     es-abstract "^1.19.0"
-
-ascii-chart@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.npmmirror.com/ascii-chart/download/ascii-chart-1.3.3.tgz#e80585410aaf2db13588afea610f7dddfa06931a"
-  integrity sha1-6AWFQQqvLbE1iK/qYQ993foGkxo=
-  dependencies:
-    array-matrix "1.0.0"
 
 asciichart@^1.5.25:
   version "1.5.25"
@@ -665,11 +646,6 @@ enquirer@^2.3.5:
   integrity sha1-Kn/l3WNKHkElqXXsmU/1RW3Dc00=
   dependencies:
     ansi-colors "^4.1.1"
-
-ervy@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.npmmirror.com/ervy/download/ervy-1.0.7.tgz#b4167707ef178484c7b84d7d6e8cca727cf7f252"
-  integrity sha1-tBZ3B+8XhITHuE19bozKcnz38lI=
 
 es-abstract@^1.19.0, es-abstract@^1.19.1:
   version "1.19.1"
@@ -1094,11 +1070,6 @@ fs.realpath@^1.0.0:
   resolved "https://registry.npm.taobao.org/fs.realpath/download/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fs@^0.0.1-security:
-  version "0.0.1-security"
-  resolved "https://registry.nlark.com/fs/download/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
-  integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
-
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -1522,7 +1493,7 @@ lodash.zip@^4.2.0:
   resolved "https://registry.nlark.com/lodash.zip/download/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@4.17.21, lodash@^4.13.1, lodash@^4.17.21, lodash@^4.17.4:
+lodash@4.17.21, lodash@^4.13.1:
   version "4.17.21"
   resolved "https://registry.npmmirror.com/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -1578,11 +1549,6 @@ minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.nlark.com/minimist/download/minimist-1.2.5.tgz?cache=0&sync_timestamp=1618846813226&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fminimist%2Fdownload%2Fminimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
-
-moment@^2.29.1:
-  version "2.29.1"
-  resolved "https://registry.npmmirror.com/moment/download/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
-  integrity sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M=
 
 ms@2.0.0:
   version "2.0.0"

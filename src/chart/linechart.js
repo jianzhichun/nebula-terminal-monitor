@@ -5,7 +5,7 @@ import stats from "../stats.js"
 import asciichart from "asciichart"
 
 const screenHeight = process.stdout.rows || 100
-const dataLength = 120
+const dataLength = 80
 
 try {
   let data = new Array(dataLength).fill(0)
