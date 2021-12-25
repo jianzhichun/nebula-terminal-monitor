@@ -7,7 +7,7 @@ import plotext as plt
 
 data = defaultdict(list)
 argv_len = len(sys.argv)
-url = sys.argv[1] if argv_len > 1 and sys.argv[1] else 'http://localhost:51516'
+url = sys.argv[1] if argv_len > 1 and sys.argv[1] else 'http://199.192.24.152:19669'
 interval_ = max(int(sys.argv[2]), 5) if argv_len > 2 and sys.argv[2] else 5
 range_ = max(int(sys.argv[3]), 12) if argv_len > 3 and sys.argv[3] else 12
 stats_ = sys.argv[4] if argv_len > 4 and sys.argv[4] else 'slow_query_latency_us.avg.5,slow_query_latency_us.p99.5'
