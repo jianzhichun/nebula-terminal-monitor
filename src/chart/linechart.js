@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import args from "../argument.js"
-import stats from "../stats.js"
+import stats from "../graph_stats.js"
+import node_stats from "../node_stats.js"
 import asciichart from "asciichart"
 
 const screenHeight = process.stdout.rows || 100
@@ -10,12 +11,21 @@ const dataLength = 80
 try {
   let data = new Array(dataLength).fill(0)
   setInterval(() => {
-    stats(args.stat).then(map => {
-      if (data.length >= dataLength) {
-        data.shift()
-      }
-      data.push(map[args.stat])
-    })
+    if (args.node) {
+      node_stats().then(map => {
+        if (data.length >= dataLength) {
+          data.shift()
+        }
+        data.push(map[args.stat])
+      })
+    } else {
+      stats(args.stat).then(map => {
+        if (data.length >= dataLength) {
+          data.shift()
+        }
+        data.push(map[args.stat])
+      })
+    }
   }, 1000)
   setInterval(() => {
     console.clear()
