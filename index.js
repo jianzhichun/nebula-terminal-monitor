@@ -5,12 +5,16 @@ import ervy from "ervy"
 import stats from "./src/stats.js"
 import moment from "moment"
 import { normalize, time, interpolate, zip } from "./src/utils.js"
+import { showNodeMonitor } from "./src/monitors.js"
 const { bar, pie, bullet, donut, gauge, scatter, fg, bg } = ervy
 
 try {
   setInterval(() => {
     stats().then(map => {
       console.clear()
+      // if (args.node) {
+      //   showNodeMonitor(map);
+      // }
       const pieData1 = [
         { key: 'A', value: 5, style: '* ' },
         { key: 'B', value: 10, style: '+ ' },
@@ -30,7 +34,7 @@ try {
         (a1, a2) => console.log(a1 + a2)
       )
     })
-  }, 100);
+  }, 1000);
 } catch (e) {
   console.log("Couldn't plot chart. Please try different settings.")
   process.exit(1)
