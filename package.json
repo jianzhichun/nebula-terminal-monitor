@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
 
-    "pkg": "pkg -t node14-linux-x64 index.js -o nebula-monitor"
+    "pkg": "pkg -t node14-linux-x64 ./index.js -o nebula-monitor"
   },
   "bin": {
     "nebula-terminal-monitor-cli": "index.js"

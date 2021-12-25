@@ -16,7 +16,7 @@ program
   .option("-tu --timeunit <string>", "specify the timeunit of node or graph", "s")
   .option("--disable-legend", "disable legend text")
   .option("-s --stat <string>", "stat", "query_latency_us.avg.3600")
-  .option("-ss --stats <string>", "stats", (s, p) => s.split(","), ["query_latency_us.avg.3600", "query_latency_us.avg.3600", "query_latency_us.avg.3600"])
+  .option("-ss --stats <string>", "stats", (s, p) => s.split(","), ["node_vmstat_pgmajfault", "go_memstats_alloc_bytes"])
   .parse(process.argv)
 
 const param = program.opts()

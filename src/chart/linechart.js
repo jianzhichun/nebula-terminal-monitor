@@ -11,15 +11,15 @@ const dataLength = 80
 try {
   let data = new Array(dataLength).fill(0)
   setInterval(() => {
-    if (args.node) {
-      node_stats().then(map => {
+    if (args.graph) {
+      stats(args.stat).then(map => {
         if (data.length >= dataLength) {
           data.shift()
         }
         data.push(map[args.stat])
       })
     } else {
-      stats(args.stat).then(map => {
+      node_stats().then(map => {
         if (data.length >= dataLength) {
           data.shift()
         }
