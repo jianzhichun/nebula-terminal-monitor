@@ -2,15 +2,17 @@
 
 import args from "./src/argument.js"
 import stats from "./src/stats.js"
-import asciichart from "asciichart";
-const screenHeight = process.stdout.rows || 100;
+import asciichart from "asciichart"
+
+const screenHeight = process.stdout.rows || 100
+const dataLength = 120
 
 try {
-  let data = new Array(120).fill(0)
+  let data = new Array(dataLength).fill(0)
   setInterval(() => {
     stats(args.stat).then(map => {
-      if (data.length >= 120) {
-        data.pop()
+      if (data.length >= dataLength) {
+        data.shift()
       }
       data.push(map[args.stat])
     })
