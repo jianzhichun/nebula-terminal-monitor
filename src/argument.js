@@ -16,6 +16,7 @@ program
   .option("-tu --timeunit <string>", "specify the timeunit of node or graph", "s")
   .option("--disable-legend", "disable legend text")
   .option("-s --stat <string>", "stat", "query_latency_us.avg.3600")
+  .option("-ss --stats <string>", "stats", (s, p) => s.split(","), ["query_latency_us.avg.3600", "query_latency_us.avg.3600", "query_latency_us.avg.3600"])
   .parse(process.argv)
 
 const param = program.opts()
@@ -29,5 +30,6 @@ export default {
   interval: param.interval,
   timeunit: param.timeunit,
   stat: param.stat,
+  stats: param.stats,
   disableLegend: param.disableLegend
 }

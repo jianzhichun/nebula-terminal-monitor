@@ -3,7 +3,15 @@
 import args from "./src/argument.js";
 import { execSync } from "child_process";
 
+
+const list2pairs = (arr) => arr.reduce(function (result, value, index, array) {
+  if (index % 2 === 0)
+    result.push(array.slice(index, index + 2));
+  return result;
+}, [])
+const subArgs = `${args.node ? "-n " : " "}${args.graph ? "-g " : " "}${args.https ? "-https " : " "}${args.host ? "-h " + args.host + " " : " "}${args.port ? "-p " + args.port + " " : " "}`
+let command = list2pairs(args.stats).map(pair => "[" + pair.map(stat => ` -t '${stat.replace(/[_\.]/g, " ")}' "node src/chart/linechart ${subArgs}-s ${stat}"`).join(" .. ") + "]").join(" : ")
 execSync(
-  "./node_modules/.bin/stmux -M -w always -e ERROR -m beep -- [ [ -s 1/4 -t '饼图1' \"node src/chart/c\" .. -t '折线图' \"node src/chart/a\" ] : [ -s 1/4 -t '饼图2' \"node src/chart/d\" .. -t '柱状图' \"node src/chart/b\" ] ]",
+  `./node_modules/.bin/stmux -M -w always -e ERROR -m beep -- [ ${command} ]`,
   { stdio: "inherit" }
 );
