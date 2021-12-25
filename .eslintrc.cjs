@@ -15,6 +15,7 @@ module.exports = {
     sourceType: "module"
   },
   rules: {
+    "no-useless-escape": "off",
     "linebreak-style": ["error", "unix"],
     "no-unused-vars": "off",
   },
