@@ -11,7 +11,7 @@ program
   .option("-g, --graph", "show graph monitor")
   .option("-https", "https", false)
   .option("-h --host <string>", "specify the host ip of node or graph", "199.192.24.152")
-  .option("-p --port <n>", "specify the port of node or graph", 19669)
+  .option("-p --port <n>", "specify the port of node or graph", 9100)
   .option("-i --interval <n>", "specify the interval of node or graph", 60)
   .option("-tu --timeunit <string>", "specify the timeunit of node or graph", "s")
   .option("--disable-legend", "disable legend text")
