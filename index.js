@@ -1,41 +1,17 @@
 #!/usr/bin/env node
 
-import args from "./src/argument.js"
-import ervy from "ervy"
-import stats from "./src/stats.js"
-import moment from "moment"
-import { normalize, time, interpolate, zip } from "./src/utils.js"
-import { showNodeMonitor } from "./src/monitors.js"
-const { bar, pie, bullet, donut, gauge, scatter, fg, bg } = ervy
+import args from "./src/argument.js";
+import { execSync } from "child_process";
 
-try {
-  setInterval(() => {
-    stats().then(map => {
-      console.clear()
-      // if (args.node) {
-      //   showNodeMonitor(map);
-      // }
-      const pieData1 = [
-        { key: 'A', value: 5, style: '* ' },
-        { key: 'B', value: 10, style: '+ ' },
-        { key: 'C', value: 10, style: '# ' },
-        { key: 'D', value: 10, style: 'O ' }
-      ]
 
-      const pieData2 = [
-        { key: 'A', value: 5, style: bg('cyan', 2) },
-        { key: 'B', value: 5, style: bg('yellow', 2) },
-        { key: 'C', value: 5, style: bg('magenta', 2) },
-        { key: 'D', value: 5, style: bg('white', 2) }
-      ]
-      zip(
-        pie(pieData1, { left: 1 }).split(/\r?\n/),
-        pie(pieData2, { left: 100 }).split(/\r?\n/),
-        (a1, a2) => console.log(a1 + a2)
-      )
-    })
-  }, 1000);
-} catch (e) {
-  console.log("Couldn't plot chart. Please try different settings.")
-  process.exit(1)
-}
+const list2pairs = (arr) => arr.reduce(function (result, value, index, array) {
+  if (index % 2 === 0)
+    result.push(array.slice(index, index + 2));
+  return result;
+}, [])
+const subArgs = `${args.node ? "-n " : " "}${args.graph ? "-g " : " "}${args.https ? "-https " : " "}${args.host ? "-h " + args.host + " " : " "}${args.port ? "-p " + args.port + " " : " "}`
+let command = list2pairs(args.stats).map(pair => " [ " + pair.map(stat => ` -t '${stat.replace(/[_\.]/g, " ")}' "node src/chart/linechart ${subArgs}-s ${stat}"`).join(" .. ") + " ] ").join(" : ")
+execSync(
+  `./node_modules/.bin/stmux -M -w always -e ERROR -m beep -- [ ${command} ]`,
+  { stdio: "inherit" }
+);

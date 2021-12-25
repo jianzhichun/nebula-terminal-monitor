@@ -56,3 +56,5 @@ typings/
 
 # dotenv environment variables file
 .env
+
+gm.cpython-39.pyc

@@ -1,1 +1,0 @@
-./node_modules/.bin/stmux -M -w always -e ERROR -m beep -- [ [ -s 1/4 -t '饼图1' "node chart/c" .. -t '折线图' "node chart/a" ] : [ -s 1/4 -t '饼图2' "node chart/d" .. -t '柱状图' "node chart/b" ] ]
