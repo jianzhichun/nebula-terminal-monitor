@@ -1,8 +1,9 @@
 const { Command } = require('commander')
 const _ = require('lodash/fp.js')
 const fs = require('fs')
+const path = require('path')
 
-const { version } = JSON.parse(fs.readFileSync("./package.json", "utf8"))
+const { version } = JSON.parse(fs.readFileSync(path.join(__dirname, "../package.json"), "utf8"))
 
 const program = new Command()
 program

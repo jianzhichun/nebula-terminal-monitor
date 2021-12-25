@@ -9,14 +9,17 @@
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
 
-    "pkg": "pkg . -t node14-linux-x64 -o nebula-monitor"
+    "pkg": "pkg -t node14-linux-x64 src/index.js -o nebula-monitor"
   },
   "bin": {
     "nebula-terminal-monitor-cli": "src/index.js"
   },
   "pkg": {
-    "scripts": "src/**/*.js",
-    "assets": "src/**/*"
+    "assets": [
+      "src/**/*",
+      "./package.json",
+      "./node_modules/.bin/stmux"
+    ]
   },
   "repository": {
     "type": "git",
