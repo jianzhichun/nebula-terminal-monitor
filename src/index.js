@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import args from "./src/argument.js";
+import args from "./argument.js";
 import { execSync } from "child_process";
 
 

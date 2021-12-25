@@ -6,14 +6,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/index.js",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
 
-    "pkg": "pkg -t node14-linux-x64 ./index.js -o nebula-monitor"
+    "pkg": "pkg . -t node14-linux-x64 -o nebula-monitor"
   },
   "bin": {
-    "nebula-terminal-monitor-cli": "index.js"
+    "nebula-terminal-monitor-cli": "src/index.js"
+  },
+  "pkg": {
+    "scripts": "src/**/*.js"
   },
   "repository": {
     "type": "git",
