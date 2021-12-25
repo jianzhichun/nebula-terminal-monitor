@@ -16,7 +16,8 @@
     "nebula-terminal-monitor-cli": "src/index.js"
   },
   "pkg": {
-    "scripts": "src/**/*.js"
+    "scripts": "src/**/*.js",
+    "assets": "src/**/*"
   },
   "repository": {
     "type": "git",
