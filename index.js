@@ -8,6 +8,15 @@ import { normalize, time, interpolate, zip } from "./src/utils.js"
 const { bar, pie, bullet, donut, gauge, scatter, fg, bg } = ervy
 
 try {
+  let data = []
+  setInterval(() => {
+    stats().then(map => {
+      if (data.length > 120) {
+        data.pop()
+      }
+      data.push(map)
+    })
+  }, 100)
   setInterval(() => {
     stats().then(map => {
       console.clear()
