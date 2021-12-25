@@ -1,6 +1,6 @@
-import { Command } from "commander"
-import _ from "lodash/fp.js"
-import * as fs from "fs"
+const { Command } = require('commander')
+const _ = require('lodash/fp.js')
+const fs = require('fs')
 
 const { version } = JSON.parse(fs.readFileSync("./package.json", "utf8"))
 
@@ -21,7 +21,7 @@ program
 
 const param = program.opts()
 
-export default {
+module.exports = {
   node: param.node,
   graph: param.graph,
   https: param.https,

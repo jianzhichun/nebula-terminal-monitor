@@ -1,9 +1,7 @@
-#!/usr/bin/env node
-
-import args from "../argument.js"
-import stats from "../graph_stats.js"
-import node_stats from "../node_stats.js"
-import asciichart from "asciichart"
+const args = require('../argument.js')
+const stats = require('../graph_stats.js')
+const node_stats = require('../node_stats.js')
+const asciichart = require('asciichart')
 
 const screenHeight = process.stdout.rows || 100
 const dataLength = 80

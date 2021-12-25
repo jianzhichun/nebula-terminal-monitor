@@ -4,7 +4,6 @@
   "license": "MIT",
   "author": "jianzhichun <zzchun12826@gmail.com>",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint .",

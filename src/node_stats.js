@@ -1,7 +1,7 @@
-import axios from 'axios'
-import args from "./argument.js"
+const axios = require('axios')
+const args = require("./argument.js")
 
-export default function () {
+module.exports = function () {
     return axios({
         method: 'GET',
         url: `${args.https ? "https" : "http"}://${args.host}:${args.port}/metrics`

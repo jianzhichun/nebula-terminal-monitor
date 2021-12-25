@@ -1,8 +1,8 @@
-import axios from 'axios'
-import args from "./argument.js"
+const axios = require('axios')
+const args = require('./argument.js')
 
 
-export default function (stats = "num_queries.rate.5") {
+module.exports = function (stats = "num_queries.rate.5") {
     return axios({
         method: 'GET',
         url: `${args.https ? "https" : "http"}://${args.host}:${args.port}/stats?format=json${stats ? "&stats=" + stats : ""}`

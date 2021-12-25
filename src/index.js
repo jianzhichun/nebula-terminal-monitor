@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import args from "./argument.js";
-import { execSync } from "child_process";
+const args = require('./argument.js');
+const { execSync } = require('child_process');
 
 
 const list2pairs = (arr) => arr.reduce(function (result, value, index, array) {
