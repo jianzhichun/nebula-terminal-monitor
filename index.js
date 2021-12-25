@@ -14,4 +14,4 @@ let command = list2pairs(args.stats).map(pair => " [ " + pair.map(stat => ` -t '
 execSync(
   `./node_modules/.bin/stmux -M -w always -e ERROR -m beep -- [ ${command} ]`,
   { stdio: "inherit" }
-);
+)
